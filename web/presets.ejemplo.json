@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "bandas": [
+    {
+      "artista": "Mi banda",
+      "canciones": [
+        {
+          "id": "mi-banda-mi-cancion",
+          "titulo": "Mi canción",
+          "pastilla": "Puente · single coil",
+          "notas": "Ejemplo de estructura con sonido limpio y overdrive. Sustituye estos datos por tu propuesta; no genera automáticamente el sonido de un artista.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Level: equilibrar al activar"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "65 US TW",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 30 · Mid 55 · Treble 55 · Presence 30"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "US TWN 212",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 10 · Duración corta"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

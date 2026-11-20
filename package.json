@@ -1,0 +1,12 @@
+{
+  "name": "tone-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Biblioteca local de presets para Mooer GE200",
+  "scripts": {
+    "start": "node server.cjs",
+    "dev": "node --watch --watch-path=. server.cjs --dev",
+    "validate": "node validate-presets.cjs",
+    "test": "node tests/catalog-json.test.cjs && node tests/live-reload.test.cjs"
+  }
+}

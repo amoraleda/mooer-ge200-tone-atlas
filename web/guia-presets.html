@@ -1,0 +1,101 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Añadir canciones · Tone Atlas</title><link rel="stylesheet" href="style.css"><style>main{max-width:1000px;padding-top:40px;padding-bottom:50px}pre{font-size:1rem;color:var(--text);line-height:1.8}h1{font-size:2.4rem;letter-spacing:-1px}.downloads{display:flex;gap:24px;flex-wrap:wrap;margin:25px 0}.downloads a{color:var(--lime)}.example{padding:24px;background:var(--panel);border-radius:12px;font-family:monospace;overflow-x:auto;white-space:pre}h2{margin-top:32px}</style></head><body><main><a href="./">Volver a Tone Atlas</a><h1>Añade bandas y canciones</h1><div class="downloads"><a href="presets.json" download>Descargar catálogo completo</a><a href="presets.ejemplo.json" download>Descargar ejemplo</a><a href="LEEME-presets.txt" download>Descargar instrucciones</a></div><pre>TONE ATLAS &#183; PROYECTO LOCAL
+
+ARRANCAR SIN CODEX
+Abre una terminal en esta carpeta y ejecuta npm start. Se abre la web en tu navegador:
+http://127.0.0.1:5178
+Mant&#233;n abierta la ventana del servidor. Para detenerlo, pulsa Ctrl+C.
+
+DESARROLLO CON RECARGA AUTOM&#193;TICA
+Ejecuta npm run dev y abre http://127.0.0.1:5178 en el navegador.
+Al guardar presets.json, HTML, CSS, JavaScript u otro archivo del proyecto, Node reinicia el servidor y la p&#225;gina se recarga autom&#225;ticamente al reconectar (normalmente en pocos segundos).
+No necesitas reiniciar el comando ni pulsar F5. Los cambios en el c&#243;digo del servidor tambi&#233;n se aplican autom&#225;ticamente.
+En modo dev no se abre una pesta&#241;a nueva con cada reinicio: abre la direcci&#243;n una vez y mantenla abierta.
+No uses npm start y npm run dev al mismo tiempo: comparten el puerto 5178.
+npm start conserva el funcionamiento normal, sin vigilancia ni recarga autom&#225;tica.
+La recarga descarta cambios de formularios que a&#250;n no hayas guardado. Los ajustes personales guardados siguen teniendo prioridad sobre el cat&#225;logo; usa Usar ajustes del JSON si quieres aplicar los valores del archivo.
+
+REQUISITOS
+Windows y Node.js instalado (ya est&#225; disponible en este ordenador).
+No requiere npm install, cuentas, credenciales ni Codex.
+Tambi&#233;n puedes abrir una terminal en esta carpeta y ejecutar:
+node server.cjs
+No abras index.html con doble clic: la lectura de JSON necesita el servidor local.
+
+A&#209;ADIR BANDAS Y CANCIONES
+1. Edita web/presets.json con tu editor de texto.
+2. Copia una canci&#243;n existente o la de web/presets.ejemplo.json.
+3. Escribe un id &#250;nico y completa artista, titulo, pastilla, notas y bloques.
+4. base y solo usan los textos &quot;ON&quot; u &quot;OFF&quot;. AMP y CAB siempre ON.
+5. Guarda el archivo. Con npm run dev la p&#225;gina se recarga sola; con npm start, recarga manualmente. Aqu&#237; no necesitas publicar nada.
+
+Para una banda nueva, a&#241;ade un objeto a bandas con artista y canciones.
+El orden de bloques es el orden de la cadena. Se asignan a CTRL solo los bloques que cambian de ON a OFF o viceversa. Un modelo por bloque; sus valores son fijos.
+Los ajustes son instrucciones para introducir manualmente en la GE200. La app no controla la pedalera ni genera sonidos de artistas autom&#225;ticamente.
+
+VALIDAR Y PROBAR
+npm run validate
+npm test
+
+DATOS GUARDADOS
+Los favoritos y ajustes personales se guardan en el navegador para http://127.0.0.1:5178.
+El cat&#225;logo sin personalizar sigue los cambios del JSON al recargar. Si tienes ajustes personales para una canci&#243;n, pulsa Usar ajustes del JSON para aplicar la versi&#243;n del archivo.
+Las canciones retiradas del JSON pueden continuar en una biblioteca guardada; no se borran tus datos autom&#225;ticamente.
+La biblioteca de la web publicada usa otro origen y no aparece autom&#225;ticamente aqu&#237;: all&#237; pulsa Exportar biblioteca y aqu&#237; pulsa Importar.
+Usa siempre la misma direcci&#243;n y navegador para conservar el mismo almacenamiento. Exporta la biblioteca para hacer una copia de seguridad.
+
+CARPETAS
+web/: aplicaci&#243;n y presets.json, con cat&#225;logo, ejemplo y gu&#237;a.
+server.cjs: servidor local, solo accesible desde tu ordenador.
+package.json: comandos npm start, npm run dev, npm run validate y npm test.
+validate-presets.cjs: validaci&#243;n del cat&#225;logo sin dependencias.
+tests/: pruebas de cat&#225;logo y migraci&#243;n.
+
+La aplicaci&#243;n funciona sin conexi&#243;n a Internet. Las fuentes visuales pueden usar las del sistema si Google Fonts no est&#225; disponible. El enlace al manual externo s&#237; necesita Internet.
+Esta es una copia independiente del proyecto: editarla no cambia la web publicada en ChatGPT Sites.
+</pre><h2>Ejemplo listo para copiar</h2><pre class="example">{
+  "version": 1,
+  "bandas": [
+    {
+      "artista": "Mi banda",
+      "canciones": [
+        {
+          "id": "mi-banda-mi-cancion",
+          "titulo": "Mi canción",
+          "pastilla": "Puente · single coil",
+          "notas": "Ejemplo de estructura con sonido limpio y overdrive. Sustituye estos datos por tu propuesta; no genera automáticamente el sonido de un artista.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Level: equilibrar al activar"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "65 US TW",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 30 · Mid 55 · Treble 55 · Presence 30"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "US TWN 212",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 10 · Duración corta"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+</pre></main></body></html>

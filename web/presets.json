@@ -1,0 +1,858 @@
+{
+  "version": 1,
+  "bandas": [
+    {
+      "artista": "Jimi Hendrix",
+      "canciones": [
+        {
+          "id": "haze",
+          "titulo": "Purple Haze",
+          "pastilla": "Puente · single coil",
+          "notas": "La base conserva el fuzz; CTRL añade eco al solo. Es una versión práctica con un mismo grado de distorsión en ambos estados. Volumen de guitarra al 10 y tono abierto, sin cambiar de pastilla al pulsar CTRL. Si queda chillón, baja Presence; si se emborrona, reduce Gain del fuzz. El eco del solo es una propuesta, no un ajuste oficial.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "GREY FAZE",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 55 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "PLX 100",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 35 · Bass 38 · Mid 65 · Treble 50 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "TAPE",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 300 ms · Feedback 20 · Level/mezcla 14"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 8 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "wing",
+          "titulo": "Little Wing",
+          "pastilla": "Mástil · humbucker",
+          "notas": "Base casi limpia; solo con TUBE DR y eco. Mantén la misma pastilla y volumen de guitarra al 8–9 en ambos estados. Si la humbucker oscurece los acordes, baja Bass a 20. El ajuste del solo es una adaptación con overdrive suave, sin reproducir todas las capas de la grabación.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "PLX 100",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 28 · Mid 55 · Treble 58 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "TAPE",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 320 ms · Feedback 20 · Level/mezcla 15"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 12 · Duración corta o media"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "artista": "Queens of the Stone Age",
+      "canciones": [
+        {
+          "id": "qotsa-no-one-knows",
+          "titulo": "No One Knows",
+          "pastilla": "Mástil · humbucker",
+          "notas": "Base seca con medios marcados; CTRL añade un empuje y eco corto al solo. PURE BOOST tiene ganancia baja: ajusta su Level sin saturar excesivamente el ampli. Mantén volumen al 10 y tono abierto. Acorta las notas con ambas manos; reduce Bass si el mástil emborrona el riff. La afinación se ajusta en la guitarra.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "PURE BOOST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 15 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "CITRUS 50",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 45 · Bass 28 · Mid 78 · Treble 52 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "CITRUS 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "DIGITAL",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 280 ms · Feedback 20 · Level/mezcla 12"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 4 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "qotsa-go-with-the-flow",
+          "titulo": "Go with the Flow",
+          "pastilla": "Puente · single coil",
+          "notas": "La distorsión permanece activa en ambos estados; CTRL añade solo el delay para destacar una línea melódica. No se cambia su ganancia ni se promete un aumento de volumen. Esta variante de solo es creativa y no reconstruye las guitarras superpuestas del disco. Si pierde definición, baja Gain del BLACKRAT.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "BLACKRAT",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 38 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "PLX 100",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 38 · Bass 38 · Mid 65 · Treble 48 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "DIGITAL",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 300 ms · Feedback 20 · Level/mezcla 14"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 6 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "qotsa-little-sister",
+          "titulo": "Little Sister",
+          "pastilla": "Puente · single coil",
+          "notas": "Base con crunch; solo con boost y eco discreto. Mantén la single del puente y volumen al 10. Ajusta Level del PURE BOOST para ganar presencia sin un salto brusco; un ampli ya saturado puede añadir más compresión que volumen. Es una simplificación del solo, sin sus efectos especiales exactos.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "PURE BOOST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 15 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "J800",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 43 · Bass 35 · Mid 70 · Treble 50 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "DIGITAL",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 280 ms · Feedback 20 · Level/mezcla 13"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 5 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "qotsa-make-it-wit-chu",
+          "titulo": "Make It Wit Chu",
+          "pastilla": "Mástil · humbucker",
+          "notas": "Base con crunch suave; CTRL activa overdrive y eco para el solo sin mover la ganancia del ampli. Usa la humbucker, tono abierto y volumen al 8–9 en ambos estados. Si pierde dinámica, reduce Gain del TUBE DR. Prioriza el groove y los silencios; si se emborrona, baja Bass a 20.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 28 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "US BLUES OD",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Bass 25 · Mid 65 · Treble 55 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "BLUES 112",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "ANALOG",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 280 ms · Feedback 20 · Level/mezcla 12"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 8 · Duración corta o media"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "artista": "Pink Floyd",
+      "canciones": [
+        {
+          "id": "floyd-time",
+          "titulo": "Time",
+          "pastilla": "Puente · single coil",
+          "notas": "Base con crunch ligero; CTRL activa fuzz y eco para el solo. Los dos estados comparten el mismo HWT 103. Volumen de guitarra al 10; ajusta Gain del fuzz si queda áspero. Los 380 ms son una propuesta propia. Trabaja bends afinados y reduce la mezcla del delay si tapa la frase siguiente. No incluye los relojes de la introducción.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "GREY FAZE",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 58 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "HWT 103",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Bass 35 · Mid 65 · Treble 50 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "HWT 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "TAPE",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 380 ms · Feedback 20 · Level/mezcla 20"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 10 · Duración corta o media"
+            }
+          ],
+          "idsAnteriores": [
+            "floyd-time-rhythm",
+            "floyd-time-solo"
+          ]
+        },
+        {
+          "id": "floyd-breathe",
+          "titulo": "Breathe",
+          "pastilla": "Mástil · humbucker",
+          "notas": "Base limpia con movimiento y eco; CTRL añade un overdrive suave para una línea solista. PHASER permanece encendido y es una alternativa aproximada al movimiento de un Uni-Vibe. El segundo estado es una adaptación para tocar melodías con guitarra normal: no reproduce la parte de slide. Mantén volumen de guitarra al 8 y tono abierto; baja Bass si el mástil queda oscuro.",
+          "bloques": [
+            {
+              "bloque": "MOD",
+              "modelo": "PHASER",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Velocidad lenta · Barrido suave, ajustar de oído"
+            },
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 22 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "HWT 103",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 25 · Mid 55 · Treble 58 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "HWT 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "TAPE",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Time 300 ms · Feedback 20 · Level/mezcla 12"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 15 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "floyd-numb",
+          "titulo": "Comfortably Numb",
+          "pastilla": "Puente · single coil",
+          "notas": "Dos sonidos: base limpia y un único solo con MUFFY y delay, como compromiso para ambos solos de la canción. No hay un tercer estado para el solo final ni cambios de ampli. Mantén la single del puente y volumen al 10; ajusta el tono si resulta punzante. Los 370 ms son un punto de partida. Si se pierde definición, baja Gain del MUFFY a 38–40.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "MUFFY",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 48 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "HWT 103",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 30 · Mid 65 · Treble 50 · Presence 28 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "HWT 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "DIGITAL",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 370 ms · Feedback 20 · Level/mezcla 20"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 12 · Duración corta o media"
+            }
+          ],
+          "idsAnteriores": [
+            "floyd-numb-base",
+            "floyd-numb-first-solo",
+            "floyd-numb-final-solo"
+          ]
+        }
+      ]
+    },
+    {
+      "artista": "Incubus",
+      "canciones": [
+        {
+          "id": "incubus-drive",
+          "titulo": "Drive",
+          "pastilla": "Ambas pastillas",
+          "notas": "Adaptación eléctrica: base limpia y un solo suave con overdrive y eco. No convierte tu guitarra en una acústica. Mantén volumen al 8 y tono abierto. Usa poca ganancia en TUBE DR para conservar el ataque; si el mástil domina con ambas pastillas, baja Bass a 20–25.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "65 US TW",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 15 · Bass 30 · Mid 50 · Treble 60 · Presence 35 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "US TWN 212",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "ANALOG",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 280 ms · Feedback 20 · Level/mezcla 12"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 10 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "incubus-wish",
+          "titulo": "Wish You Were Here",
+          "pastilla": "Ambas pastillas",
+          "notas": "Base limpia con chorus; segundo estado fuerte/solista con distorsión y chorus apagado. Es también el estado para las partes fuertes de la canción. Se usa un ampli limpio común más un pedal de distorsión para que CTRL pueda hacerlo en una pulsación. El chorus es una opción de amplitud, no una identificación exacta del disco. Mantén ambas pastillas y volumen al 9.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "OBSESSIVE DIST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 48 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "TRI REC CL",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 32 · Mid 55 · Treble 52 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "REC 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "MOD",
+              "modelo": "ANA-CHORUS",
+              "base": "ON",
+              "solo": "OFF",
+              "ajustes": "Velocidad lenta · Profundidad y mezcla suaves"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 10 · Duración corta o media"
+            }
+          ],
+          "idsAnteriores": [
+            "incubus-wish-clean",
+            "incubus-wish-distortion"
+          ]
+        },
+        {
+          "id": "incubus-pardon",
+          "titulo": "Pardon Me",
+          "pastilla": "Ambas pastillas",
+          "notas": "Base limpia con phaser; segundo estado fuerte/solista con distorsión y phaser apagado, útil para el estribillo. El ampli permanece limpio y la distorsión viene de DS/OD: es una adaptación práctica en lugar de alternar dos modelos de ampli. Mantén ambas pastillas y volumen al 9. Los efectos y entradas de volumen de la grabación no se generan automáticamente.",
+          "bloques": [
+            {
+              "bloque": "MOD",
+              "modelo": "PHASER",
+              "base": "ON",
+              "solo": "OFF",
+              "ajustes": "Velocidad lenta · Barrido suave"
+            },
+            {
+              "bloque": "DS/OD",
+              "modelo": "OBSESSIVE DIST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 52 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "TRI REC CL",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 18 · Bass 28 · Mid 58 · Treble 55 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "REC 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 8 · Duración corta o media"
+            }
+          ],
+          "idsAnteriores": [
+            "incubus-pardon-clean",
+            "incubus-pardon-distortion"
+          ]
+        }
+      ]
+    },
+    {
+      "artista": "Rage Against the Machine",
+      "canciones": [
+        {
+          "id": "ratm-killing-in-the-name",
+          "titulo": "Killing in the Name",
+          "pastilla": "Puente · single coil",
+          "notas": "Base y solo simplificado con un boost: CTRL no reproduce el Whammy del solo original. Para ese efecto haría falta configurar por separado PITCH SHIFT y EXP; aquí se priorizan dos estados fáciles de usar. Mantén volumen al 10 y tono abierto. Drop D: Re–La–Re–Sol–Si–Mi, de grave a agudo; baja solo la sexta cuerda a Re. Ajusta Level del boost para un realce moderado.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "PURE BOOST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 12 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "J800",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 45 · Bass 40 · Mid 65 · Treble 50 · Presence 32 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 4 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "ratm-bulls-on-parade",
+          "titulo": "Bulls on Parade",
+          "pastilla": "Mástil · humbucker",
+          "notas": "El wah permanece activo y EXP controla su posición en ambos estados. CTRL solo activa el boost para la variante solista; no lo asignes también al wah. Si EXP conmuta FX/COMP al pulsar la punta, deja el bloque encendido antes de usar CTRL. Mantén volumen al 10. El scratch del solo depende de la técnica y de cortes de señal: no se genera con el boost. Esta es una simplificación de dos sonidos, no una réplica del solo.",
+          "bloques": [
+            {
+              "bloque": "FX/COMP",
+              "modelo": "CRY WAH",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Asigna EXP a WAH POSITION · Barrido manual · Mantener activado en ambos estados"
+            },
+            {
+              "bloque": "DS/OD",
+              "modelo": "PURE BOOST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 12 · Level: ajustar de oído para un realce moderado, sin salto brusco; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "J800",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 42 · Bass 28 · Mid 70 · Treble 55 · Presence 30 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 3 · Duración corta o media"
+            }
+          ]
+        },
+        {
+          "id": "ratm-guerrilla-radio",
+          "titulo": "Guerrilla Radio",
+          "pastilla": "Puente · single coil",
+          "notas": "Base seca; CTRL activa el wah para una variante solista aproximada. EXP mueve el wah, sin cambiar de preset. Asigna EXP a WAH POSITION y comprueba el recorrido. Si el interruptor de punta de EXP conmuta el bloque, vuelve al estado base antes de alternar con CTRL. No reproduce todos los efectos del solo original. Mantén la single del puente y volumen al 10; baja Gain si las notas se mezclan.",
+          "bloques": [
+            {
+              "bloque": "FX/COMP",
+              "modelo": "CRY WAH",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Asigna EXP a WAH POSITION · Barrido manual"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "J800",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 48 · Bass 38 · Mid 68 · Treble 48 · Presence 28 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "ON con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Level/mezcla 4 · Duración corta o media"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "artista": "Arctic Monkeys",
+      "canciones": [
+        {
+          "id": "arctic-monkeys-do-i-wanna-know",
+          "titulo": "Do I Wanna Know?",
+          "pastilla": "Mástil · humbucker",
+          "notas": "Propuesta propia para tu Fujigen y auriculares: riff grueso y contenido, sin reproducir exactamente el equipo ni las capas del disco. Base con fuzz y solo/fuerte con eco añadido; CTRL no cambia la ganancia ni el volumen del fuzz. El estado solo es una variante práctica para líneas melódicas, no una sección nueva de la grabación. Mantén la misma pastilla, volumen al 10 y tono abierto. Si la humbucker emborrona el riff, baja Bass a 20–25 o Gain del GREY FAZE a 35. Respeta los silencios y evita alargar las notas. Si el eco tapa el ritmo, baja su mezcla a 10.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "GREY FAZE",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 45 · Level: equilibrar con el ampli; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "PLX 100",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 30 · Bass 30 · Mid 65 · Treble 50 · Presence 28 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "ANALOG",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 300 ms · Feedback 15 · Mezcla 14"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 5 · Duración corta"
+            }
+          ]
+        },
+        {
+          "id": "arctic-monkeys-snap-out-of-it",
+          "titulo": "Snap Out of It",
+          "pastilla": "Puente · single coil",
+          "notas": "Propuesta propia para tu Fujigen y auriculares: base con crunch suave y ataque claro, y una variante solista con overdrive y eco discreto. El estado solo sirve para destacar melodías; no reproduce una sección concreta ni las capas de la grabación. CTRL activa DS/OD y DELAY juntos; los ajustes de ampli, pantalla y reverb permanecen fijos. Mantén la misma pastilla, volumen al 9 y tono abierto en ambos estados. Si el puente queda afilado, baja Presence a 20 o recorta ligeramente el tono. Busca acordes definidos y ataques cortos; si se comprime demasiado, baja Gain del ampli hacia 18. Ajusta Level del TUBE DR para un realce moderado sin salto brusco y reduce la mezcla del delay si tapa el ritmo. Son ajustes orientativos propios, no oficiales ni validados con audio.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 22 · Level: equilibrar para un realce moderado al activar; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "US BLUES OD",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 24 · Bass 30 · Mid 58 · Treble 53 · Presence 25 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "BLUES 112",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "ANALOG",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 260 ms · Feedback 15 · Mezcla 11"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 7 · Duración corta"
+            }
+          ]
+        },
+        {
+          "id": "arctic-monkeys-dancefloor",
+          "titulo": "I Bet You Look Good on the Dancefloor",
+          "pastilla": "Puente · single coil",
+          "notas": "Propuesta de crunch británico con ataque para base y boost para el solo. No reproduce todas las guitarras del disco. CTRL activa únicamente DS/OD; ampli, pantalla y reverb permanecen encendidos, sin delay para conservar los cortes secos. Usa volumen al 10 y tono abierto. Si suena punzante, baja Presence a 22–25 antes de añadir graves. Ajusta Level del PURE BOOST para que el solo destaque sin un salto brusco; si añade demasiada saturación, reduce Gain del ampli hacia 40. Prioriza la precisión rítmica y los apagados.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "PURE BOOST",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 10 · Level: realce moderado al activar, ajustar de oído"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "PLX 100",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 45 · Bass 35 · Mid 65 · Treble 55 · Presence 32 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "1960 412",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 4 · Duración corta"
+            }
+          ]
+        },
+        {
+          "id": "arctic-monkeys-whyd-you-only-call-me-when-youre-high",
+          "titulo": "Why’d You Only Call Me When You’re High?",
+          "pastilla": "Puente · single coil",
+          "notas": "Propuesta propia para tu Fujigen y auriculares: base con crunch contenido y una variante solista con overdrive y eco suave. El estado solo es una adaptación práctica para destacar melodías, no una reproducción de una sección o de todas las capas de la grabación. CTRL activa DS/OD y DELAY juntos; ampli, pantalla y reverb mantienen los mismos ajustes. Usa la misma pastilla, volumen al 9 y tono abierto en ambos estados. Si el puente resulta punzante, baja Presence a 20 o recorta ligeramente el tono. Si queda demasiado fino, prueba ambas pastillas para toda la canción y reduce Bass a 25. Ajusta Level del TUBE DR para un realce moderado y baja su Gain si pierde dinámica. Mantén los ataques cortos y los silencios; reduce la mezcla del delay si tapa el groove. Los valores son orientativos, no ajustes oficiales ni validados con audio.",
+          "bloques": [
+            {
+              "bloque": "DS/OD",
+              "modelo": "TUBE DR",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Level: equilibrar para un realce moderado al activar; resto al valor inicial"
+            },
+            {
+              "bloque": "AMP",
+              "modelo": "US BLUES OD",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Gain 25 · Bass 32 · Mid 62 · Treble 50 · Presence 28 · MST: equilibrar volumen general"
+            },
+            {
+              "bloque": "CAB",
+              "modelo": "BLUES 112",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mantener activada con auriculares"
+            },
+            {
+              "bloque": "DELAY",
+              "modelo": "ANALOG",
+              "base": "OFF",
+              "solo": "ON",
+              "ajustes": "Time 280 ms · Feedback 15 · Mezcla 12"
+            },
+            {
+              "bloque": "REVERB",
+              "modelo": "ROOM",
+              "base": "ON",
+              "solo": "ON",
+              "ajustes": "Mezcla 6 · Duración corta"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "eliminadas": [
+    "arctic-monkeys-r-u-mine"
+  ]
+}
